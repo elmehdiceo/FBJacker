@@ -1,0 +1,18 @@
+<script src="http://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var interval;
+        $(function()
+{
+    interval=setInterval("updateActiveElement();", 50);
+});
+
+function updateActiveElement()
+{
+    if ( $(document.activeElement).attr('id')=="fbframe" )
+    {
+        clearInterval(interval);
+        iflag=1;
+    }    
+}
+        
+</script>
